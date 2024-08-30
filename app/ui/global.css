@@ -1,0 +1,32 @@
+@tailwind base;
+/* Includes Tailwind's base styles (resets and basic element styles). */
+
+@tailwind components;
+/* Includes Tailwind's component classes for common UI components. */
+
+@tailwind utilities;
+/* Includes Tailwind's utility classes for quick styling in HTML. */
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+/* 
+Removes default styling (e.g., spinner buttons) from number inputs,
+making them appear as plain text fields across browsers.
+*/
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* 
+Hides the inner spin button (up/down arrows) in WebKit browsers.
+*/
+
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* 
+Hides the outer spin button in WebKit browsers.
+*/
